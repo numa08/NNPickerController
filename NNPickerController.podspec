@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NNPickerController"
-  s.version          = "0.9.0"
+  s.version          = "0.9.1"
   s.summary          = "NNPickerController is UI for picking one element."
   s.description      = <<-DESC
                        NNPickerController is UI libary. This interface can select one element, like UIPickerController + UIActionSheet.
