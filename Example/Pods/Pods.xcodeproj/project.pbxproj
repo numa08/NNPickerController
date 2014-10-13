@@ -1,1641 +1,795 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>034B3341FDFDFA257C709BC1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Tests-NNPickerController-Private.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0554CF9759FD36C99318FE45</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>09889445DE2A219220A4A2B5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-NNPickerController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AFD1618A8ADA8D5CC7B99A6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Tests-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10818BD81E19D31B97651B11</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DBEAA8B5090B75B393EECB78</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-NNPickerController-NNPickerController/Pods-NNPickerController-NNPickerController-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1178B5845CB36BE6ED2B7625</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>971EED16D2CF486413BBD1FF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6168DA5D1AAC791D295D0D47</string>
-				<string>E2F64F937B19C7B01F61779B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>B4392A8B24031BB53202980A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-NNPickerController-NNPickerController</string>
-			<key>productName</key>
-			<string>Pods-NNPickerController-NNPickerController</string>
-			<key>productReference</key>
-			<string>7B32484A9CFE40004C9CD78A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>14C9374E0E507C6AC6EE677E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>034B3341FDFDFA257C709BC1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1BAF9951AF4AFCC9B22C1C52</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>21D85614D80F7E06FB27C79A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Pods-Tests-NNPickerController-prefix.pch</string>
-			<key>path</key>
-			<string>../Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2230633E53B1EAD451F4BBBD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>945DBC30159F81C61470DBA2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2489235E5BF724CB75347A75</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Pods-Tests-NNPickerController-dummy.m</string>
-			<key>path</key>
-			<string>../Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>253AAB3CEC387C839F1A2757</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>323A0C3B538FA0F3744BDB3C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C46FB2E05BCF301B4B171319</string>
-				<string>70413FEB0EF27105DBAE78BB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6C08E3E61B508CF99DAD3E0E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Tests-NNPickerController</string>
-			<key>productName</key>
-			<string>Pods-Tests-NNPickerController</string>
-			<key>productReference</key>
-			<string>6F442B495A64599773CA5BE1</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>25C526B3DFD7EF6F6E0E8285</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6FAA7519CC34342E8995B10C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6EBC0FC9ED3AC4F881AD9BD8</string>
-				<string>7747FA9E523E7049898514A2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>A5892976BFB1E73ABEED402D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Tests</string>
-			<key>productName</key>
-			<string>Pods-Tests</string>
-			<key>productReference</key>
-			<string>2FA6389FB0828868F9252061</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>2D6DC3CF0A84E217BA1F27D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2489235E5BF724CB75347A75</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2E306DF83F9B32C52AB3988D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2FA6389FB0828868F9252061</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>3041FFDBA2395E65C4B9F7E8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>45891C286EADF594AB88D3FB</string>
-				<string>5DA4610DC2E3C1BFF0581BD2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>323A0C3B538FA0F3744BDB3C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6FD5DECDFB389ACC039193C6</string>
-				<string>14C9374E0E507C6AC6EE677E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3417FD24193F2E0BAA727330</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-NNPickerController-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B552B4563AC421134076ED8</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BEBDBBAE90D2B21E99734EC7</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>253AAB3CEC387C839F1A2757</string>
-			<key>remoteInfo</key>
-			<string>Pods-Tests-NNPickerController</string>
-		</dict>
-		<key>3BEF616361C4D3AB0911CF57</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D346B947AB7CFD61DC5F8977</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3D726AAACABFECBA4FF37F7A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>1178B5845CB36BE6ED2B7625</string>
-			<key>targetProxy</key>
-			<string>AE47516C20D5B3153266F503</string>
-		</dict>
-		<key>3D8C3CAAED52E4034A87297B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3DF3083DD06EF443198E9EE3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4033795958CDB182DA42D588</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BEBDBBAE90D2B21E99734EC7</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>F7551823BFCD9CFA72A0181B</string>
-			<key>remoteInfo</key>
-			<string>NNPickerController</string>
-		</dict>
-		<key>41FAC87706BDDDA913B33DEC</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DBEAA8B5090B75B393EECB78</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-NNPickerController-NNPickerController/Pods-NNPickerController-NNPickerController-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>45891C286EADF594AB88D3FB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>4783CE418A994871B6439B51</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9D672D149154892BA6E2377F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>543AF717351A1898D5E5AE59</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-NNPickerController.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5573F449F15A3AE8415521D6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>55EB7DBCE064E2FCCB73C251</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0554CF9759FD36C99318FE45</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>593C4419D05A657E47E3F199</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BAF2B0BBC99D9DD3A110FD97</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5CEC6861508E429DD70A72F5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5DA4610DC2E3C1BFF0581BD2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>60DB691A9F1780AC680CB08B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E91520B91A1750A68426C7EB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6168DA5D1AAC791D295D0D47</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>947F503AD2791992DE3BC318</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>676AE01FFAC36036B927D247</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09889445DE2A219220A4A2B5</string>
-				<string>DBEAA8B5090B75B393EECB78</string>
-				<string>8DA1CF44D66F93ECA02AAC21</string>
-				<string>3417FD24193F2E0BAA727330</string>
-				<string>A158B27DC1F8A68D0721B2A8</string>
-				<string>034B3341FDFDFA257C709BC1</string>
-				<string>2489235E5BF724CB75347A75</string>
-				<string>21D85614D80F7E06FB27C79A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/Pods-NNPickerController-NNPickerController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>69B1A519C8551EA07561E345</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C08E3E61B508CF99DAD3E0E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>F7551823BFCD9CFA72A0181B</string>
-			<key>targetProxy</key>
-			<string>4033795958CDB182DA42D588</string>
-		</dict>
-		<key>6C2739BFB2B9A8732F7929FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6EBC0FC9ED3AC4F881AD9BD8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CB7AB9B5F04F1A042ECA9942</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6F442B495A64599773CA5BE1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests-NNPickerController.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6FAA7519CC34342E8995B10C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>4783CE418A994871B6439B51</string>
-				<string>A0A70820C5E0032E135266ED</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6FD5DECDFB389ACC039193C6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>034B3341FDFDFA257C709BC1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>70413FEB0EF27105DBAE78BB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A750252BAC331972E80A3306</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>710B050B6BD6A8B2FBC07EC1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>89F706F0EAD0CC8AC27951F0</string>
-				<string>593C4419D05A657E47E3F199</string>
-				<string>DF3EE57DB08C84FCC88A0371</string>
-				<string>AE8DB48BA6096342A46B144F</string>
-				<string>75F53B6CAA0052443BE93FA2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>74161E892F1F908FE6C5C2DC</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DDEBF986413F89D7F836701C</string>
-				<string>76B1D6EFCA85DA45D4D410E2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>75F53B6CAA0052443BE93FA2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB4043B7CADC120304EDECAA</string>
-				<string>EA597B2E073E73BFA633D2F2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>76B1D6EFCA85DA45D4D410E2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7747FA9E523E7049898514A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C317023291AB0BA6013AED58</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7B32484A9CFE40004C9CD78A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-NNPickerController-NNPickerController.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7BCFE89CBC74E7821F4D724A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D949B1F8A062C00F3081B29D</string>
-			<key>buildPhases</key>
-			<array>
-				<string>F86CC56D0F47769E73C5ED84</string>
-				<string>60DB691A9F1780AC680CB08B</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3D726AAACABFECBA4FF37F7A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-NNPickerController</string>
-			<key>productName</key>
-			<string>Pods-NNPickerController</string>
-			<key>productReference</key>
-			<string>543AF717351A1898D5E5AE59</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>8172A03960F77FD8C190104B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>NNPickerController.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>866EC399035CD389A83818D8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>89F706F0EAD0CC8AC27951F0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>8B89C2BA43C4B75DD8A41EB4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0554CF9759FD36C99318FE45</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8DA1CF44D66F93ECA02AAC21</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-NNPickerController-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>945DBC30159F81C61470DBA2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-NNPickerController.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>947F503AD2791992DE3BC318</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8DA1CF44D66F93ECA02AAC21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>94CE7B17CAA7871412DBE476</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>971EED16D2CF486413BBD1FF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>10818BD81E19D31B97651B11</string>
-				<string>41FAC87706BDDDA913B33DEC</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9A2EE2BD459765434CAAB6FA</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BEBDBBAE90D2B21E99734EC7</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>F7551823BFCD9CFA72A0181B</string>
-			<key>remoteInfo</key>
-			<string>NNPickerController</string>
-		</dict>
-		<key>9D672D149154892BA6E2377F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A0369497D88C515265621F37</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A0A70820C5E0032E135266ED</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3D8C3CAAED52E4034A87297B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A158B27DC1F8A68D0721B2A8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Tests-NNPickerController.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-Tests-NNPickerController/Pods-Tests-NNPickerController.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5892976BFB1E73ABEED402D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>253AAB3CEC387C839F1A2757</string>
-			<key>targetProxy</key>
-			<string>3B552B4563AC421134076ED8</string>
-		</dict>
-		<key>A750252BAC331972E80A3306</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0554CF9759FD36C99318FE45</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AE47516C20D5B3153266F503</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BEBDBBAE90D2B21E99734EC7</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>1178B5845CB36BE6ED2B7625</string>
-			<key>remoteInfo</key>
-			<string>Pods-NNPickerController-NNPickerController</string>
-		</dict>
-		<key>AE8DB48BA6096342A46B144F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8172A03960F77FD8C190104B</string>
-				<string>543AF717351A1898D5E5AE59</string>
-				<string>7B32484A9CFE40004C9CD78A</string>
-				<string>2FA6389FB0828868F9252061</string>
-				<string>6F442B495A64599773CA5BE1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4392A8B24031BB53202980A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>F7551823BFCD9CFA72A0181B</string>
-			<key>targetProxy</key>
-			<string>9A2EE2BD459765434CAAB6FA</string>
-		</dict>
-		<key>BAF2B0BBC99D9DD3A110FD97</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>676AE01FFAC36036B927D247</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>NNPickerController</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BEBDBBAE90D2B21E99734EC7</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>74161E892F1F908FE6C5C2DC</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>710B050B6BD6A8B2FBC07EC1</string>
-			<key>productRefGroup</key>
-			<string>AE8DB48BA6096342A46B144F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>F7551823BFCD9CFA72A0181B</string>
-				<string>7BCFE89CBC74E7821F4D724A</string>
-				<string>1178B5845CB36BE6ED2B7625</string>
-				<string>25C526B3DFD7EF6F6E0E8285</string>
-				<string>253AAB3CEC387C839F1A2757</string>
-			</array>
-		</dict>
-		<key>C317023291AB0BA6013AED58</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0554CF9759FD36C99318FE45</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C46FB2E05BCF301B4B171319</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2D6DC3CF0A84E217BA1F27D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CB4043B7CADC120304EDECAA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>69B1A519C8551EA07561E345</string>
-				<string>CCBCFCC206C1D4454934C8AE</string>
-				<string>866EC399035CD389A83818D8</string>
-				<string>5CEC6861508E429DD70A72F5</string>
-				<string>3DF3083DD06EF443198E9EE3</string>
-				<string>D346B947AB7CFD61DC5F8977</string>
-				<string>945DBC30159F81C61470DBA2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-NNPickerController</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-NNPickerController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB7AB9B5F04F1A042ECA9942</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5573F449F15A3AE8415521D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CCBCFCC206C1D4454934C8AE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D346B947AB7CFD61DC5F8977</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-NNPickerController.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D949B1F8A062C00F3081B29D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3BEF616361C4D3AB0911CF57</string>
-				<string>2230633E53B1EAD451F4BBBD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DBEAA8B5090B75B393EECB78</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-NNPickerController-NNPickerController-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DDEBF986413F89D7F836701C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>NO</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DF3EE57DB08C84FCC88A0371</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8B89C2BA43C4B75DD8A41EB4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E2F64F937B19C7B01F61779B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>55EB7DBCE064E2FCCB73C251</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E91520B91A1750A68426C7EB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0554CF9759FD36C99318FE45</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EA597B2E073E73BFA633D2F2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>94CE7B17CAA7871412DBE476</string>
-				<string>2E306DF83F9B32C52AB3988D</string>
-				<string>5573F449F15A3AE8415521D6</string>
-				<string>0AFD1618A8ADA8D5CC7B99A6</string>
-				<string>A0369497D88C515265621F37</string>
-				<string>9D672D149154892BA6E2377F</string>
-				<string>3D8C3CAAED52E4034A87297B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F7551823BFCD9CFA72A0181B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3041FFDBA2395E65C4B9F7E8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1BAF9951AF4AFCC9B22C1C52</string>
-				<string>FB4D4242F8ECF5244D774D07</string>
-				<string>6C2739BFB2B9A8732F7929FA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>NNPickerController</string>
-			<key>productName</key>
-			<string>NNPickerController</string>
-			<key>productReference</key>
-			<string>8172A03960F77FD8C190104B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>F86CC56D0F47769E73C5ED84</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FC53FAB3324957E47E412F55</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FB4D4242F8ECF5244D774D07</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FC53FAB3324957E47E412F55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>866EC399035CD389A83818D8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>BEBDBBAE90D2B21E99734EC7</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D6DC3CF0A84E217BA1F27D6 /* Pods-Tests-NNPickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2489235E5BF724CB75347A75 /* Pods-Tests-NNPickerController-dummy.m */; };
+		55EB7DBCE064E2FCCB73C251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554CF9759FD36C99318FE45 /* Foundation.framework */; };
+		947F503AD2791992DE3BC318 /* Pods-NNPickerController-NNPickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA1CF44D66F93ECA02AAC21 /* Pods-NNPickerController-NNPickerController-dummy.m */; };
+		A750252BAC331972E80A3306 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554CF9759FD36C99318FE45 /* Foundation.framework */; };
+		C317023291AB0BA6013AED58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554CF9759FD36C99318FE45 /* Foundation.framework */; };
+		CB7AB9B5F04F1A042ECA9942 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573F449F15A3AE8415521D6 /* Pods-Tests-dummy.m */; };
+		E91520B91A1750A68426C7EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554CF9759FD36C99318FE45 /* Foundation.framework */; };
+		FC53FAB3324957E47E412F55 /* Pods-NNPickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 866EC399035CD389A83818D8 /* Pods-NNPickerController-dummy.m */; };
+		FD309D2E19EB773100D12141 /* NNPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD309D2D19EB773100D12141 /* NNPickerController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B552B4563AC421134076ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEBDBBAE90D2B21E99734EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 253AAB3CEC387C839F1A2757;
+			remoteInfo = "Pods-Tests-NNPickerController";
+		};
+		4033795958CDB182DA42D588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEBDBBAE90D2B21E99734EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7551823BFCD9CFA72A0181B;
+			remoteInfo = NNPickerController;
+		};
+		9A2EE2BD459765434CAAB6FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEBDBBAE90D2B21E99734EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7551823BFCD9CFA72A0181B;
+			remoteInfo = NNPickerController;
+		};
+		AE47516C20D5B3153266F503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEBDBBAE90D2B21E99734EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1178B5845CB36BE6ED2B7625;
+			remoteInfo = "Pods-NNPickerController-NNPickerController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034B3341FDFDFA257C709BC1 /* Pods-Tests-NNPickerController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-NNPickerController-Private.xcconfig"; path = "../Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-Private.xcconfig"; sourceTree = "<group>"; };
+		0554CF9759FD36C99318FE45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		09889445DE2A219220A4A2B5 /* Pods-NNPickerController-NNPickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNPickerController-NNPickerController.xcconfig"; sourceTree = "<group>"; };
+		0AFD1618A8ADA8D5CC7B99A6 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		21D85614D80F7E06FB27C79A /* Pods-Tests-NNPickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-NNPickerController-prefix.pch"; path = "../Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-prefix.pch"; sourceTree = "<group>"; };
+		2489235E5BF724CB75347A75 /* Pods-Tests-NNPickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-NNPickerController-dummy.m"; path = "../Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-dummy.m"; sourceTree = "<group>"; };
+		2E306DF83F9B32C52AB3988D /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FA6389FB0828868F9252061 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3417FD24193F2E0BAA727330 /* Pods-NNPickerController-NNPickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NNPickerController-NNPickerController-prefix.pch"; sourceTree = "<group>"; };
+		3D8C3CAAED52E4034A87297B /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3DF3083DD06EF443198E9EE3 /* Pods-NNPickerController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NNPickerController-resources.sh"; sourceTree = "<group>"; };
+		543AF717351A1898D5E5AE59 /* libPods-NNPickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNPickerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5573F449F15A3AE8415521D6 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		5CEC6861508E429DD70A72F5 /* Pods-NNPickerController-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NNPickerController-environment.h"; sourceTree = "<group>"; };
+		69B1A519C8551EA07561E345 /* Pods-NNPickerController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NNPickerController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F442B495A64599773CA5BE1 /* libPods-Tests-NNPickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-NNPickerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B32484A9CFE40004C9CD78A /* libPods-NNPickerController-NNPickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNPickerController-NNPickerController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8172A03960F77FD8C190104B /* NNPickerController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNPickerController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		866EC399035CD389A83818D8 /* Pods-NNPickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NNPickerController-dummy.m"; sourceTree = "<group>"; };
+		89F706F0EAD0CC8AC27951F0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8DA1CF44D66F93ECA02AAC21 /* Pods-NNPickerController-NNPickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NNPickerController-NNPickerController-dummy.m"; sourceTree = "<group>"; };
+		945DBC30159F81C61470DBA2 /* Pods-NNPickerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNPickerController.release.xcconfig"; sourceTree = "<group>"; };
+		94CE7B17CAA7871412DBE476 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D672D149154892BA6E2377F /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0369497D88C515265621F37 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		A158B27DC1F8A68D0721B2A8 /* Pods-Tests-NNPickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-NNPickerController.xcconfig"; path = "../Pods-Tests-NNPickerController/Pods-Tests-NNPickerController.xcconfig"; sourceTree = "<group>"; };
+		CCBCFCC206C1D4454934C8AE /* Pods-NNPickerController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NNPickerController-acknowledgements.plist"; sourceTree = "<group>"; };
+		D346B947AB7CFD61DC5F8977 /* Pods-NNPickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNPickerController.debug.xcconfig"; sourceTree = "<group>"; };
+		DBEAA8B5090B75B393EECB78 /* Pods-NNPickerController-NNPickerController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NNPickerController-NNPickerController-Private.xcconfig"; sourceTree = "<group>"; };
+		FD309D2C19EB773100D12141 /* NNPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NNPickerController.h; path = Pod/Classes/NNPickerController.h; sourceTree = "<group>"; };
+		FD309D2D19EB773100D12141 /* NNPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NNPickerController.m; path = Pod/Classes/NNPickerController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60DB691A9F1780AC680CB08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91520B91A1750A68426C7EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70413FEB0EF27105DBAE78BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A750252BAC331972E80A3306 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7747FA9E523E7049898514A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C317023291AB0BA6013AED58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F64F937B19C7B01F61779B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55EB7DBCE064E2FCCB73C251 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4D4242F8ECF5244D774D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		593C4419D05A657E47E3F199 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2B0BBC99D9DD3A110FD97 /* NNPickerController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		676AE01FFAC36036B927D247 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				09889445DE2A219220A4A2B5 /* Pods-NNPickerController-NNPickerController.xcconfig */,
+				DBEAA8B5090B75B393EECB78 /* Pods-NNPickerController-NNPickerController-Private.xcconfig */,
+				8DA1CF44D66F93ECA02AAC21 /* Pods-NNPickerController-NNPickerController-dummy.m */,
+				3417FD24193F2E0BAA727330 /* Pods-NNPickerController-NNPickerController-prefix.pch */,
+				A158B27DC1F8A68D0721B2A8 /* Pods-Tests-NNPickerController.xcconfig */,
+				034B3341FDFDFA257C709BC1 /* Pods-Tests-NNPickerController-Private.xcconfig */,
+				2489235E5BF724CB75347A75 /* Pods-Tests-NNPickerController-dummy.m */,
+				21D85614D80F7E06FB27C79A /* Pods-Tests-NNPickerController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-NNPickerController-NNPickerController";
+			sourceTree = "<group>";
+		};
+		710B050B6BD6A8B2FBC07EC1 = {
+			isa = PBXGroup;
+			children = (
+				89F706F0EAD0CC8AC27951F0 /* Podfile */,
+				593C4419D05A657E47E3F199 /* Development Pods */,
+				DF3EE57DB08C84FCC88A0371 /* Frameworks */,
+				AE8DB48BA6096342A46B144F /* Products */,
+				75F53B6CAA0052443BE93FA2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		75F53B6CAA0052443BE93FA2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB4043B7CADC120304EDECAA /* Pods-NNPickerController */,
+				EA597B2E073E73BFA633D2F2 /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8B89C2BA43C4B75DD8A41EB4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0554CF9759FD36C99318FE45 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AE8DB48BA6096342A46B144F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8172A03960F77FD8C190104B /* NNPickerController.bundle */,
+				543AF717351A1898D5E5AE59 /* libPods-NNPickerController.a */,
+				7B32484A9CFE40004C9CD78A /* libPods-NNPickerController-NNPickerController.a */,
+				2FA6389FB0828868F9252061 /* libPods-Tests.a */,
+				6F442B495A64599773CA5BE1 /* libPods-Tests-NNPickerController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF2B0BBC99D9DD3A110FD97 /* NNPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				676AE01FFAC36036B927D247 /* Support Files */,
+				FD309D2C19EB773100D12141 /* NNPickerController.h */,
+				FD309D2D19EB773100D12141 /* NNPickerController.m */,
+			);
+			name = NNPickerController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CB4043B7CADC120304EDECAA /* Pods-NNPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				69B1A519C8551EA07561E345 /* Pods-NNPickerController-acknowledgements.markdown */,
+				CCBCFCC206C1D4454934C8AE /* Pods-NNPickerController-acknowledgements.plist */,
+				866EC399035CD389A83818D8 /* Pods-NNPickerController-dummy.m */,
+				5CEC6861508E429DD70A72F5 /* Pods-NNPickerController-environment.h */,
+				3DF3083DD06EF443198E9EE3 /* Pods-NNPickerController-resources.sh */,
+				D346B947AB7CFD61DC5F8977 /* Pods-NNPickerController.debug.xcconfig */,
+				945DBC30159F81C61470DBA2 /* Pods-NNPickerController.release.xcconfig */,
+			);
+			name = "Pods-NNPickerController";
+			path = "Target Support Files/Pods-NNPickerController";
+			sourceTree = "<group>";
+		};
+		DF3EE57DB08C84FCC88A0371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B89C2BA43C4B75DD8A41EB4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA597B2E073E73BFA633D2F2 /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				94CE7B17CAA7871412DBE476 /* Pods-Tests-acknowledgements.markdown */,
+				2E306DF83F9B32C52AB3988D /* Pods-Tests-acknowledgements.plist */,
+				5573F449F15A3AE8415521D6 /* Pods-Tests-dummy.m */,
+				0AFD1618A8ADA8D5CC7B99A6 /* Pods-Tests-environment.h */,
+				A0369497D88C515265621F37 /* Pods-Tests-resources.sh */,
+				9D672D149154892BA6E2377F /* Pods-Tests.debug.xcconfig */,
+				3D8C3CAAED52E4034A87297B /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1178B5845CB36BE6ED2B7625 /* Pods-NNPickerController-NNPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971EED16D2CF486413BBD1FF /* Build configuration list for PBXNativeTarget "Pods-NNPickerController-NNPickerController" */;
+			buildPhases = (
+				6168DA5D1AAC791D295D0D47 /* Sources */,
+				E2F64F937B19C7B01F61779B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4392A8B24031BB53202980A /* PBXTargetDependency */,
+			);
+			name = "Pods-NNPickerController-NNPickerController";
+			productName = "Pods-NNPickerController-NNPickerController";
+			productReference = 7B32484A9CFE40004C9CD78A /* libPods-NNPickerController-NNPickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		253AAB3CEC387C839F1A2757 /* Pods-Tests-NNPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323A0C3B538FA0F3744BDB3C /* Build configuration list for PBXNativeTarget "Pods-Tests-NNPickerController" */;
+			buildPhases = (
+				C46FB2E05BCF301B4B171319 /* Sources */,
+				70413FEB0EF27105DBAE78BB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C08E3E61B508CF99DAD3E0E /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests-NNPickerController";
+			productName = "Pods-Tests-NNPickerController";
+			productReference = 6F442B495A64599773CA5BE1 /* libPods-Tests-NNPickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		25C526B3DFD7EF6F6E0E8285 /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FAA7519CC34342E8995B10C /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				6EBC0FC9ED3AC4F881AD9BD8 /* Sources */,
+				7747FA9E523E7049898514A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5892976BFB1E73ABEED402D /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = 2FA6389FB0828868F9252061 /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7BCFE89CBC74E7821F4D724A /* Pods-NNPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D949B1F8A062C00F3081B29D /* Build configuration list for PBXNativeTarget "Pods-NNPickerController" */;
+			buildPhases = (
+				F86CC56D0F47769E73C5ED84 /* Sources */,
+				60DB691A9F1780AC680CB08B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D726AAACABFECBA4FF37F7A /* PBXTargetDependency */,
+			);
+			name = "Pods-NNPickerController";
+			productName = "Pods-NNPickerController";
+			productReference = 543AF717351A1898D5E5AE59 /* libPods-NNPickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F7551823BFCD9CFA72A0181B /* NNPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3041FFDBA2395E65C4B9F7E8 /* Build configuration list for PBXNativeTarget "NNPickerController" */;
+			buildPhases = (
+				1BAF9951AF4AFCC9B22C1C52 /* Sources */,
+				FB4D4242F8ECF5244D774D07 /* Frameworks */,
+				6C2739BFB2B9A8732F7929FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NNPickerController;
+			productName = NNPickerController;
+			productReference = 8172A03960F77FD8C190104B /* NNPickerController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEBDBBAE90D2B21E99734EC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 74161E892F1F908FE6C5C2DC /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 710B050B6BD6A8B2FBC07EC1;
+			productRefGroup = AE8DB48BA6096342A46B144F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7551823BFCD9CFA72A0181B /* NNPickerController */,
+				7BCFE89CBC74E7821F4D724A /* Pods-NNPickerController */,
+				1178B5845CB36BE6ED2B7625 /* Pods-NNPickerController-NNPickerController */,
+				25C526B3DFD7EF6F6E0E8285 /* Pods-Tests */,
+				253AAB3CEC387C839F1A2757 /* Pods-Tests-NNPickerController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C2739BFB2B9A8732F7929FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BAF9951AF4AFCC9B22C1C52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD309D2E19EB773100D12141 /* NNPickerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6168DA5D1AAC791D295D0D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947F503AD2791992DE3BC318 /* Pods-NNPickerController-NNPickerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EBC0FC9ED3AC4F881AD9BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7AB9B5F04F1A042ECA9942 /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46FB2E05BCF301B4B171319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6DC3CF0A84E217BA1F27D6 /* Pods-Tests-NNPickerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86CC56D0F47769E73C5ED84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC53FAB3324957E47E412F55 /* Pods-NNPickerController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D726AAACABFECBA4FF37F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1178B5845CB36BE6ED2B7625 /* Pods-NNPickerController-NNPickerController */;
+			targetProxy = AE47516C20D5B3153266F503 /* PBXContainerItemProxy */;
+		};
+		6C08E3E61B508CF99DAD3E0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7551823BFCD9CFA72A0181B /* NNPickerController */;
+			targetProxy = 4033795958CDB182DA42D588 /* PBXContainerItemProxy */;
+		};
+		A5892976BFB1E73ABEED402D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 253AAB3CEC387C839F1A2757 /* Pods-Tests-NNPickerController */;
+			targetProxy = 3B552B4563AC421134076ED8 /* PBXContainerItemProxy */;
+		};
+		B4392A8B24031BB53202980A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7551823BFCD9CFA72A0181B /* NNPickerController */;
+			targetProxy = 9A2EE2BD459765434CAAB6FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10818BD81E19D31B97651B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEAA8B5090B75B393EECB78 /* Pods-NNPickerController-NNPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NNPickerController-NNPickerController/Pods-NNPickerController-NNPickerController-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		14C9374E0E507C6AC6EE677E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034B3341FDFDFA257C709BC1 /* Pods-Tests-NNPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2230633E53B1EAD451F4BBBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945DBC30159F81C61470DBA2 /* Pods-NNPickerController.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BEF616361C4D3AB0911CF57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D346B947AB7CFD61DC5F8977 /* Pods-NNPickerController.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		41FAC87706BDDDA913B33DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEAA8B5090B75B393EECB78 /* Pods-NNPickerController-NNPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-NNPickerController-NNPickerController/Pods-NNPickerController-NNPickerController-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45891C286EADF594AB88D3FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4783CE418A994871B6439B51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D672D149154892BA6E2377F /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5DA4610DC2E3C1BFF0581BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6FD5DECDFB389ACC039193C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034B3341FDFDFA257C709BC1 /* Pods-Tests-NNPickerController-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-NNPickerController/Pods-Tests-NNPickerController-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		76B1D6EFCA85DA45D4D410E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0A70820C5E0032E135266ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D8C3CAAED52E4034A87297B /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDEBF986413F89D7F836701C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3041FFDBA2395E65C4B9F7E8 /* Build configuration list for PBXNativeTarget "NNPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45891C286EADF594AB88D3FB /* Debug */,
+				5DA4610DC2E3C1BFF0581BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323A0C3B538FA0F3744BDB3C /* Build configuration list for PBXNativeTarget "Pods-Tests-NNPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD5DECDFB389ACC039193C6 /* Debug */,
+				14C9374E0E507C6AC6EE677E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FAA7519CC34342E8995B10C /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4783CE418A994871B6439B51 /* Debug */,
+				A0A70820C5E0032E135266ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74161E892F1F908FE6C5C2DC /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDEBF986413F89D7F836701C /* Debug */,
+				76B1D6EFCA85DA45D4D410E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971EED16D2CF486413BBD1FF /* Build configuration list for PBXNativeTarget "Pods-NNPickerController-NNPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10818BD81E19D31B97651B11 /* Debug */,
+				41FAC87706BDDDA913B33DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D949B1F8A062C00F3081B29D /* Build configuration list for PBXNativeTarget "Pods-NNPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEF616361C4D3AB0911CF57 /* Debug */,
+				2230633E53B1EAD451F4BBBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEBDBBAE90D2B21E99734EC7 /* Project object */;
+}
