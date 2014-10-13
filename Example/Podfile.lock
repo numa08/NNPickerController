@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NNPickerController: 4380a23d442af80c50b69e1d6299ec6e74085070
+  NNPickerController: e48dfdf51043cb22eb9a642ba265a2e2705fe44b
 
 COCOAPODS: 0.34.2
