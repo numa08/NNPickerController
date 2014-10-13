@@ -10,21 +10,20 @@
 Pod::Spec.new do |s|
   s.name             = "NNPickerController"
   s.version          = "0.1.0"
-  s.summary          = "A short description of NNPickerController."
+  s.summary          = "NNPickerController is UI for picking one element."
   s.description      = <<-DESC
-                       An optional longer description of NNPickerController
+                       NNPickerController is UI libary. This interface can select one element, like UIPickerController + UIActionSheet.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       When ios8, Developer cannot create custom UIActionSheet layout. Now, there can it.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/NNPickerController"
+  s.homepage         = "https://github.com/numa08/NNPickerController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "numa08" => "n511287@gmail.com" }
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NNPickerController.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
@@ -32,7 +31,6 @@ Pod::Spec.new do |s|
     'NNPickerController' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.frameworks = 'UIKit'
 end
