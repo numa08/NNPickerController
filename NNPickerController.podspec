@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "numa08" => "n511287@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NNPickerController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/numa08/NNPickerController.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/numa08'
 
   s.platform     = :ios, '6.0'
   s.requires_arc = true
