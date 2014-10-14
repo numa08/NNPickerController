@@ -12,6 +12,7 @@
 @property (nonatomic, copy) NNPickerControllerNumberOfRowInSection numberOfRowInSectionHandler;
 @property (nonatomic, copy) NNPickerControllerCellForRowAtIndexPath cellForRowAtIndexPathHandler;
 @property (nonatomic, retain) UIView *container;
+@property (nonatomic, retain) UIView *background;
 @property (nonatomic, retain) UIWindow *targetWindow;
 - (void)didClickCancel:(id)sender;
 @end
@@ -28,10 +29,10 @@
 {
     [super viewDidLoad];
     
-    UIView *background = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    background.alpha = 0.4f;
-    background.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:background];
+    self.background = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.background.alpha = 0.4f;
+    self.background.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:self.background];
     
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     CGFloat navigationBarHeight = 0.0f;
@@ -77,9 +78,16 @@
     CGRect startFrame = CGRectMake(0, CGRectGetMaxY(goalFrame), CGRectGetWidth(goalFrame), CGRectGetHeight(goalFrame));
     self.container.frame = startFrame;
     
-    [UIView transitionWithView:self.targetWindow duration:0.3f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
-        self.container.frame = goalFrame;
+    CGFloat goalAlpha = self.background.alpha;
+    CGFloat startAlpha = 0.0f;
+    self.background.alpha = startAlpha;
+    
+    [UIView transitionWithView:self.targetWindow duration:0.15f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
+        self.background.alpha = goalAlpha;
     } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
+            self.container.frame = goalFrame;
+        } completion:nil];
     }];
 }
 
@@ -88,15 +96,21 @@
     CGRect startFrame = self.container.frame;
     CGRect goalFrame = CGRectMake(0,  CGRectGetMaxY(self.view.frame), CGRectGetWidth(startFrame), CGRectGetHeight(startFrame));
     
-    [UIView transitionWithView:self.targetWindow duration:0.3f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
+    
+    CGFloat goalAlpha = 0.0f;
+    [UIView animateWithDuration:0.15f delay:0.0f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
         self.container.frame = goalFrame;
     } completion:^(BOOL finished) {
-        [self.targetWindow.rootViewController.view removeFromSuperview];
-        self.targetWindow.rootViewController = nil;
-        self.targetWindow = nil;
-        
-        UIWindow *nextWindow = [[UIApplication sharedApplication].delegate window];
-        [nextWindow makeKeyAndVisible];
+        [UIView transitionWithView:self.targetWindow duration:0.2f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
+            self.background.alpha = goalAlpha;
+        } completion:^(BOOL finished) {
+            [self.targetWindow.rootViewController.view removeFromSuperview];
+            self.targetWindow.rootViewController = nil;
+            self.targetWindow = nil;
+            
+            UIWindow *nextWindow = [[UIApplication sharedApplication].delegate window];
+            [nextWindow makeKeyAndVisible];
+        }];
     }];
 }
 
