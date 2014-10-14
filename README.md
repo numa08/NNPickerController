@@ -8,7 +8,7 @@
 
 NNPickerController is library for UI. Application user can picke one of element by this UI.
 
-![](http://i.gyazo.com/e5c627ea1a5e218e3e60c20af547451a.gif)
+![](http://g.recordit.co/DbCDL3BBPm.gif)
 
 ## Usage
 
