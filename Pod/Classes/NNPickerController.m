@@ -7,15 +7,12 @@
 
 #import "NNPickerController.h"
 
-#import <objc/runtime.h>
-
-static const char kASKey_Window;
-
 @interface NNPickerController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, copy) NNPickerControllerNumberOfSection numberOfSectionHandler;
 @property (nonatomic, copy) NNPickerControllerNumberOfRowInSection numberOfRowInSectionHandler;
 @property (nonatomic, copy) NNPickerControllerCellForRowAtIndexPath cellForRowAtIndexPathHandler;
 @property (nonatomic, retain) UIView *container;
+@property (nonatomic, retain) UIWindow *targetWindow;
 - (void)didClickCancel:(id)sender;
 @end
 
@@ -69,19 +66,18 @@ static const char kASKey_Window;
 
 - (void)showPickerControllerForViewController
 {
-    UIWindow *targetWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    targetWindow.alpha = 1.0f;
-    targetWindow.backgroundColor = [UIColor clearColor];
-    targetWindow.rootViewController = self;
-    targetWindow.windowLevel = UIWindowLevelAlert + 1000;
-    [targetWindow makeKeyAndVisible];
+    self.targetWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.targetWindow.alpha = 1.0f;
+    self.targetWindow.backgroundColor = [UIColor clearColor];
+    self.targetWindow.rootViewController = self;
+    self.targetWindow.windowLevel = UIWindowLevelAlert + 1000;
+    [self.targetWindow makeKeyAndVisible];
  
     CGRect goalFrame = self.container.frame;
     CGRect startFrame = CGRectMake(0, CGRectGetMaxY(goalFrame), CGRectGetWidth(goalFrame), CGRectGetHeight(goalFrame));
     self.container.frame = startFrame;
     
-    objc_setAssociatedObject([UIApplication sharedApplication], &kASKey_Window, targetWindow, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [UIView transitionWithView:targetWindow duration:0.3f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView transitionWithView:self.targetWindow duration:0.3f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
         self.container.frame = goalFrame;
     } completion:^(BOOL finished) {
     }];
@@ -89,17 +85,14 @@ static const char kASKey_Window;
 
 - (void)dismissPickerController
 {
-    UIWindow *targetWindow = objc_getAssociatedObject([UIApplication sharedApplication], &kASKey_Window);
     CGRect startFrame = self.container.frame;
     CGRect goalFrame = CGRectMake(0,  CGRectGetMaxY(self.view.frame), CGRectGetWidth(startFrame), CGRectGetHeight(startFrame));
     
-    [UIView transitionWithView:targetWindow duration:0.3f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView transitionWithView:self.targetWindow duration:0.3f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
         self.container.frame = goalFrame;
     } completion:^(BOOL finished) {
-        [targetWindow.rootViewController.view removeFromSuperview];
-        targetWindow.rootViewController = nil;
-        
-        objc_setAssociatedObject([UIApplication sharedApplication], &kASKey_Window, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        [self.targetWindow.rootViewController.view removeFromSuperview];
+        self.targetWindow.rootViewController = nil;
         
         UIWindow *nextWindow = [[UIApplication sharedApplication].delegate window];
         [nextWindow makeKeyAndVisible];
