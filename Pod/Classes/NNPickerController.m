@@ -82,7 +82,7 @@
     CGFloat startAlpha = 0.0f;
     self.background.alpha = startAlpha;
     
-    [UIView transitionWithView:self.targetWindow duration:0.15f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView transitionWithView:self.targetWindow duration:0.2f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
         self.background.alpha = goalAlpha;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
@@ -98,7 +98,7 @@
     
     
     CGFloat goalAlpha = 0.0f;
-    [UIView animateWithDuration:0.15f delay:0.0f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
         self.container.frame = goalFrame;
     } completion:^(BOOL finished) {
         [UIView transitionWithView:self.targetWindow duration:0.2f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
