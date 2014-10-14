@@ -15,8 +15,7 @@ static const char kASKey_Window;
 @property (nonatomic, copy) NNPickerControllerNumberOfSection numberOfSectionHandler;
 @property (nonatomic, copy) NNPickerControllerNumberOfRowInSection numberOfRowInSectionHandler;
 @property (nonatomic, copy) NNPickerControllerCellForRowAtIndexPath cellForRowAtIndexPathHandler;
-@property (nonatomic, retain) UITableView *contentView;
-@property (nonatomic, retain) UIToolbar *navigationBar;
+@property (nonatomic, retain) UIView *container;
 - (void)didClickCancel:(id)sender;
 @end
 
@@ -44,17 +43,21 @@ static const char kASKey_Window;
     } else if (UIInterfaceOrientationIsLandscape(orientation)) {
         navigationBarHeight = 32.0f;
     }
-    self.navigationBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame) / 2, CGRectGetWidth(self.view.frame), navigationBarHeight)];
-    self.navigationBar.barStyle = UIBarStyleBlack;
+    UIToolbar *navigationBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), navigationBarHeight)];
+    navigationBar.barStyle = UIBarStyleBlack;
     UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didClickCancel:)];
-    self.navigationBar.items = @[flexibleSpace, cancel];
-    [self.view addSubview:self.navigationBar];
+    navigationBar.items = @[flexibleSpace, cancel];
     
-    self.contentView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navigationBar.frame), CGRectGetWidth(self.view.frame), (CGRectGetHeight(self.view.frame) / 2)- CGRectGetHeight(self.navigationBar.frame)) style:UITableViewStylePlain];
-    self.contentView.delegate = self;
-    self.contentView.dataSource = self;
-    [self.view addSubview:self.contentView];
+    UITableView *contentView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(navigationBar.frame), CGRectGetWidth(self.view.frame), (CGRectGetHeight(self.view.frame) / 2)- CGRectGetHeight(navigationBar.frame)) style:UITableViewStylePlain];
+    contentView.delegate = self;
+    contentView.dataSource = self;
+    
+    self.container = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMinX(navigationBar.frame), CGRectGetHeight(self.view.frame) / 2, CGRectGetWidth(navigationBar.frame), CGRectGetHeight(navigationBar.frame) + CGRectGetHeight(contentView.frame))];
+    self.container.alpha = 1.0f;
+    [self.container addSubview:navigationBar];
+    [self.container addSubview:contentView];
+    [self.view addSubview:self.container];
 }
 
 - (void)setNumberOfSection:(NNPickerControllerNumberOfSection)numberOfSectionHandler withNumberOfRow:(NNPickerControllerNumberOfRowInSection)numberOfRowHandler withCellForRowAtIndexPath:(NNPickerControllerCellForRowAtIndexPath)cellForRowAtIndexPathHandler
@@ -66,20 +69,20 @@ static const char kASKey_Window;
 
 - (void)showPickerControllerForViewController
 {
-    CGRect goalFrame = [UIScreen mainScreen].bounds;
-    CGRect startFrame = CGRectMake(0, CGRectGetHeight(goalFrame), CGRectGetWidth(goalFrame), CGRectGetHeight(goalFrame));
-    
-    UIWindow *targetWindow = [[UIWindow alloc] initWithFrame:startFrame];
+    UIWindow *targetWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     targetWindow.alpha = 1.0f;
     targetWindow.backgroundColor = [UIColor clearColor];
     targetWindow.rootViewController = self;
     targetWindow.windowLevel = UIWindowLevelAlert + 1000;
     [targetWindow makeKeyAndVisible];
+ 
+    CGRect goalFrame = self.container.frame;
+    CGRect startFrame = CGRectMake(0, CGRectGetMaxY(goalFrame), CGRectGetWidth(goalFrame), CGRectGetHeight(goalFrame));
+    self.container.frame = startFrame;
     
     objc_setAssociatedObject([UIApplication sharedApplication], &kASKey_Window, targetWindow, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [UIView transitionWithView:targetWindow duration:0.2f options:UIViewAnimationOptionTransitionCrossDissolve|UIViewAnimationOptionCurveEaseInOut animations:^{
-        targetWindow.frame = goalFrame;
-        targetWindow.transform = CGAffineTransformIdentity;
+        self.container.frame = goalFrame;
     } completion:^(BOOL finished) {
     }];
 }
@@ -87,10 +90,11 @@ static const char kASKey_Window;
 - (void)dismissPickerController
 {
     UIWindow *targetWindow = objc_getAssociatedObject([UIApplication sharedApplication], &kASKey_Window);
-    CGRect startFrame = targetWindow.frame;
-    CGRect goalFrame = CGRectMake(0, CGRectGetHeight(startFrame), CGRectGetWidth(startFrame), CGRectGetHeight(startFrame));
-    [UIView transitionWithView:targetWindow duration:0.2f options:UIViewAnimationOptionTransitionCrossDissolve|UIViewAnimationOptionCurveEaseInOut animations:^{
-        targetWindow.frame = goalFrame;
+    CGRect startFrame = self.container.frame;
+    CGRect goalFrame = CGRectMake(0,  CGRectGetMaxY(self.view.frame), CGRectGetWidth(startFrame), CGRectGetHeight(startFrame));
+    
+    [UIView transitionWithView:targetWindow duration:0.2f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveLinear animations:^{
+        self.container.frame = goalFrame;
     } completion:^(BOOL finished) {
         [targetWindow.rootViewController.view removeFromSuperview];
         targetWindow.rootViewController = nil;
