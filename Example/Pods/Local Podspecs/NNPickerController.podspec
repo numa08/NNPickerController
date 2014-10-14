@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NNPickerController"
-  s.version          = "0.1.0"
+  s.version          = "0.9.1"
   s.summary          = "NNPickerController is UI for picking one element."
   s.description      = <<-DESC
                        NNPickerController is UI libary. This interface can select one element, like UIPickerController + UIActionSheet.
@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "numa08" => "n511287@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NNPickerController.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/numa08/NNPickerController.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/numa08'
 
   s.platform     = :ios, '6.0'
   s.requires_arc = true
@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
     'NNPickerController' => ['Pod/Assets/*.png']
   }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
 end
