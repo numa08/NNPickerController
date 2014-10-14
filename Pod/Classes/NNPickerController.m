@@ -25,13 +25,18 @@ static const char kASKey_Window;
 - (void)loadView
 {
     [super loadView];
-    self.view.alpha = 0.6f;
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor clearColor];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIView *background = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    background.alpha = 0.6f;
+    background.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:background];
+    
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     CGFloat navigationBarHeight = 0.0f;
     if (UIInterfaceOrientationIsPortrait(orientation)) {
