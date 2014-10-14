@@ -93,6 +93,7 @@
     } completion:^(BOOL finished) {
         [self.targetWindow.rootViewController.view removeFromSuperview];
         self.targetWindow.rootViewController = nil;
+        self.targetWindow = nil;
         
         UIWindow *nextWindow = [[UIApplication sharedApplication].delegate window];
         [nextWindow makeKeyAndVisible];
