@@ -29,8 +29,8 @@
     [super viewDidLoad];
     
     UIView *background = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    background.alpha = 0.6f;
-    background.backgroundColor = [UIColor grayColor];
+    background.alpha = 0.4f;
+    background.backgroundColor = [UIColor blackColor];
     [self.view addSubview:background];
     
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
