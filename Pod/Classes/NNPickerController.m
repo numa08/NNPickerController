@@ -81,7 +81,7 @@ static const char kASKey_Window;
     self.container.frame = startFrame;
     
     objc_setAssociatedObject([UIApplication sharedApplication], &kASKey_Window, targetWindow, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [UIView transitionWithView:targetWindow duration:0.2f options:UIViewAnimationOptionTransitionCrossDissolve|UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView transitionWithView:targetWindow duration:0.3f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
         self.container.frame = goalFrame;
     } completion:^(BOOL finished) {
     }];
@@ -93,7 +93,7 @@ static const char kASKey_Window;
     CGRect startFrame = self.container.frame;
     CGRect goalFrame = CGRectMake(0,  CGRectGetMaxY(self.view.frame), CGRectGetWidth(startFrame), CGRectGetHeight(startFrame));
     
-    [UIView transitionWithView:targetWindow duration:0.2f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveLinear animations:^{
+    [UIView transitionWithView:targetWindow duration:0.3f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
         self.container.frame = goalFrame;
     } completion:^(BOOL finished) {
         [targetWindow.rootViewController.view removeFromSuperview];
