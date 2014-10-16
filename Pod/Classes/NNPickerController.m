@@ -84,11 +84,11 @@
     
     [UIView transitionWithView:self.targetWindow duration:0.2f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
         self.background.alpha = goalAlpha;
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
-            self.container.frame = goalFrame;
-        } completion:nil];
-    }];
+    } completion:nil];
+    [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseOut animations:^{
+        self.container.frame = goalFrame;
+    } completion:nil];
+
 }
 
 - (void)dismissPickerController
@@ -100,18 +100,18 @@
     CGFloat goalAlpha = 0.0f;
     [UIView animateWithDuration:0.2f delay:0.0f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
         self.container.frame = goalFrame;
+    } completion:nil];
+    [UIView transitionWithView:self.targetWindow duration:0.2f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
+        self.background.alpha = goalAlpha;
     } completion:^(BOOL finished) {
-        [UIView transitionWithView:self.targetWindow duration:0.2f options:UIViewAnimationOptionTransitionNone|UIViewAnimationOptionCurveEaseIn animations:^{
-            self.background.alpha = goalAlpha;
-        } completion:^(BOOL finished) {
-            [self.targetWindow.rootViewController.view removeFromSuperview];
-            self.targetWindow.rootViewController = nil;
-            self.targetWindow = nil;
-            
-            UIWindow *nextWindow = [[UIApplication sharedApplication].delegate window];
-            [nextWindow makeKeyAndVisible];
-        }];
+        [self.targetWindow.rootViewController.view removeFromSuperview];
+        self.targetWindow.rootViewController = nil;
+        self.targetWindow = nil;
+        
+        UIWindow *nextWindow = [[UIApplication sharedApplication].delegate window];
+        [nextWindow makeKeyAndVisible];
     }];
+
 }
 
 # pragma mark TableView DataSource

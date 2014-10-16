@@ -248,7 +248,7 @@
 				ORGANIZATIONNAME = numa08;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 4355Q7EME6;
+						DevelopmentTeam = V8A5T53R22;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
