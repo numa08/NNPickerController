@@ -11,60 +11,20 @@
 @property (nonatomic, copy) NNPickerControllerNumberOfSection numberOfSectionHandler;
 @property (nonatomic, copy) NNPickerControllerNumberOfRowInSection numberOfRowInSectionHandler;
 @property (nonatomic, copy) NNPickerControllerCellForRowAtIndexPath cellForRowAtIndexPathHandler;
-@property (nonatomic, retain) UIView *container;
-@property (nonatomic, retain) UIView *background;
 @property (nonatomic, retain) UIWindow *targetWindow;
-- (void)didClickCancel:(id)sender;
+@property (retain, nonatomic) IBOutlet UIView *background;
+@property (retain, nonatomic) IBOutlet UIView *container;
+- (IBAction)didClickCancel:(id)sender;
 @end
 
 @implementation NNPickerController
-
-- (void)loadView
+- (id)init
 {
-    [super loadView];
-    self.view.backgroundColor = [UIColor clearColor];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    self.background = [[UIView alloc] initWithFrame:self.view.frame];
-    self.background.alpha = 0.4f;
-    self.background.backgroundColor = [UIColor blackColor];
-    self.background.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [self.view addSubview:self.background];
-    
-    CGFloat navigationBarHeight = 44.0f;
-    UIToolbar *navigationBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), navigationBarHeight)];
-    navigationBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    navigationBar.barStyle = UIBarStyleBlack;
-    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didClickCancel:)];
-    navigationBar.items = @[flexibleSpace, cancel];
-    
-    UITableView *contentView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(navigationBar.frame), CGRectGetWidth(self.view.frame), (CGRectGetHeight(self.view.frame) / 2)- CGRectGetHeight(navigationBar.frame)) style:UITableViewStylePlain];
-    contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    contentView.delegate = self;
-    contentView.dataSource = self;
-    
-    self.container = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMinX(navigationBar.frame), CGRectGetHeight(self.view.frame) / 2, CGRectGetWidth(navigationBar.frame), CGRectGetHeight(navigationBar.frame) + CGRectGetHeight(contentView.frame))];
-    self.container.alpha = 1.0f;
-    self.container.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    [self.container addSubview:navigationBar];
-    [self.container addSubview:contentView];
-    
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-0-[_background]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_background)]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_background]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_background)]];
-
-    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-0-[navigationBar]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(navigationBar)]];
-    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[navigationBar(navigationBarHeight)]" options:0 metrics:@{@"navigationBarHeight" : @(navigationBarHeight)} views:NSDictionaryOfVariableBindings(navigationBar)]];
-    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-0-[contentView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(contentView)]];
-    [self.container addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[navigationBar][contentView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(navigationBar, contentView)]];
-    [self.view addSubview:self.container];
-    
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-0-[_container]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_container)]];
-    
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"NNPickerController" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"NNPickerController" bundle:bundle];
+    self = [storyBoard instantiateViewControllerWithIdentifier:@"NNPickerController"];
+    return self;
 }
 
 - (void)setNumberOfSection:(NNPickerControllerNumberOfSection)numberOfSectionHandler withNumberOfRow:(NNPickerControllerNumberOfRowInSection)numberOfRowHandler withCellForRowAtIndexPath:(NNPickerControllerCellForRowAtIndexPath)cellForRowAtIndexPathHandler
@@ -159,13 +119,42 @@
     self.finishPickingHandler(self, tableView, indexPath);
 }
 
+# pragma mark - ViewController rotation
+
+// ios7 eariler
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    CGFloat newWidth;
+    CGFloat newHeight;
+    CGFloat newYPosition;
+    if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation)) {
+        newWidth = CGRectGetWidth(self.view.frame);
+        newHeight = CGRectGetHeight(self.view.frame) / 2;
+        newYPosition = newHeight;
+    } else {
+        newWidth = CGRectGetHeight(self.view.frame);
+        newHeight = CGRectGetWidth(self.view.frame) / 2;
+        newYPosition = newHeight;
+    }
+}
+
+
+// ios8 grater
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        self.container.frame = CGRectMake(0, size.height / 2, size.width, size.height / 2);
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        
+    }];
+}
+
 # pragma mark - Private Methods
-- (void)didClickCancel:(id)sender
+- (IBAction)didClickCancel:(id)sender;
 {
     if (self.cancelHandler == NULL) {
         return;
     }
     self.cancelHandler(self);
 }
-
 @end
