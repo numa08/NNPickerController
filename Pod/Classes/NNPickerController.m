@@ -34,13 +34,7 @@
     self.background.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.background];
     
-    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-    CGFloat navigationBarHeight = 0.0f;
-    if (UIInterfaceOrientationIsPortrait(orientation)) {
-        navigationBarHeight = 44.0f;
-    } else if (UIInterfaceOrientationIsLandscape(orientation)) {
-        navigationBarHeight = 32.0f;
-    }
+    CGFloat navigationBarHeight = 44.0f;
     UIToolbar *navigationBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), navigationBarHeight)];
     navigationBar.barStyle = UIBarStyleBlack;
     UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
