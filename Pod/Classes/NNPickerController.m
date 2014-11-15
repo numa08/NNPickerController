@@ -29,10 +29,15 @@
 {
     [super viewDidLoad];
     
-    self.background = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.background = [[UIView alloc] initWithFrame:self.view.frame];
     self.background.alpha = 0.4f;
     self.background.backgroundColor = [UIColor blackColor];
+    self.background.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:self.background];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-0-[_background]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_background)]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_background]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_background)]];
+    
+    
     
     CGFloat navigationBarHeight = 44.0f;
     UIToolbar *navigationBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), navigationBarHeight)];
