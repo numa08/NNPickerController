@@ -11,51 +11,20 @@
 @property (nonatomic, copy) NNPickerControllerNumberOfSection numberOfSectionHandler;
 @property (nonatomic, copy) NNPickerControllerNumberOfRowInSection numberOfRowInSectionHandler;
 @property (nonatomic, copy) NNPickerControllerCellForRowAtIndexPath cellForRowAtIndexPathHandler;
-@property (nonatomic, retain) UIView *container;
-@property (nonatomic, retain) UIView *background;
 @property (nonatomic, retain) UIWindow *targetWindow;
-- (void)didClickCancel:(id)sender;
+@property (retain, nonatomic) IBOutlet UIView *background;
+@property (retain, nonatomic) IBOutlet UIView *container;
+- (IBAction)didClickCancel:(id)sender;
 @end
 
 @implementation NNPickerController
-
-- (void)loadView
+- (id)init
 {
-    [super loadView];
-    self.view.backgroundColor = [UIColor clearColor];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    self.background = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.background.alpha = 0.4f;
-    self.background.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:self.background];
-    
-    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-    CGFloat navigationBarHeight = 0.0f;
-    if (UIInterfaceOrientationIsPortrait(orientation)) {
-        navigationBarHeight = 44.0f;
-    } else if (UIInterfaceOrientationIsLandscape(orientation)) {
-        navigationBarHeight = 32.0f;
-    }
-    UIToolbar *navigationBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), navigationBarHeight)];
-    navigationBar.barStyle = UIBarStyleBlack;
-    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didClickCancel:)];
-    navigationBar.items = @[flexibleSpace, cancel];
-    
-    UITableView *contentView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(navigationBar.frame), CGRectGetWidth(self.view.frame), (CGRectGetHeight(self.view.frame) / 2)- CGRectGetHeight(navigationBar.frame)) style:UITableViewStylePlain];
-    contentView.delegate = self;
-    contentView.dataSource = self;
-    
-    self.container = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMinX(navigationBar.frame), CGRectGetHeight(self.view.frame) / 2, CGRectGetWidth(navigationBar.frame), CGRectGetHeight(navigationBar.frame) + CGRectGetHeight(contentView.frame))];
-    self.container.alpha = 1.0f;
-    [self.container addSubview:navigationBar];
-    [self.container addSubview:contentView];
-    [self.view addSubview:self.container];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"NNPickerController" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"NNPickerController" bundle:bundle];
+    self = [storyBoard instantiateViewControllerWithIdentifier:@"NNPickerController"];
+    return self;
 }
 
 - (void)setNumberOfSection:(NNPickerControllerNumberOfSection)numberOfSectionHandler withNumberOfRow:(NNPickerControllerNumberOfRowInSection)numberOfRowHandler withCellForRowAtIndexPath:(NNPickerControllerCellForRowAtIndexPath)cellForRowAtIndexPathHandler
@@ -150,13 +119,42 @@
     self.finishPickingHandler(self, tableView, indexPath);
 }
 
+# pragma mark - ViewController rotation
+
+// ios7 eariler
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    CGFloat newWidth;
+    CGFloat newHeight;
+    CGFloat newYPosition;
+    if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation)) {
+        newWidth = CGRectGetWidth(self.view.frame);
+        newHeight = CGRectGetHeight(self.view.frame) / 2;
+        newYPosition = newHeight;
+    } else {
+        newWidth = CGRectGetHeight(self.view.frame);
+        newHeight = CGRectGetWidth(self.view.frame) / 2;
+        newYPosition = newHeight;
+    }
+}
+
+
+// ios8 grater
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        self.container.frame = CGRectMake(0, size.height / 2, size.width, size.height / 2);
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        
+    }];
+}
+
 # pragma mark - Private Methods
-- (void)didClickCancel:(id)sender
+- (IBAction)didClickCancel:(id)sender;
 {
     if (self.cancelHandler == NULL) {
         return;
     }
     self.cancelHandler(self);
 }
-
 @end
