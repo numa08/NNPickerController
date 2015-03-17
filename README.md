@@ -1,5 +1,6 @@
 # NNPickerController
 
+[![Build Status](https://travis-ci.org/numa08/NNPickerController.svg)](https://travis-ci.org/numa08/NNPickerController)
 <!-- [![CI Status](http://img.shields.io/travis/numa08/NNPickerController.svg?style=flat)](https://travis-ci.org/numa08/NNPickerController)
 [![Version](https://img.shields.io/cocoapods/v/NNPickerController.svg?style=flat)](http://cocoadocs.org/docsets/NNPickerController)
 [![License](https://img.shields.io/cocoapods/l/NNPickerController.svg?style=flat)](http://cocoadocs.org/docsets/NNPickerController)
