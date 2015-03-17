@@ -1,5 +1,5 @@
 PODS:
-  - NNPickerController (0.9.9)
+  - NNPickerController (1.0.1)
 
 DEPENDENCIES:
   - NNPickerController (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NNPickerController: cca208cc8c867135cc5726eed8e71beb2e52c8e7
+  NNPickerController: 3b4e1908812e74f2a314ca6ad29a91a6d99b4152
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.36.0
